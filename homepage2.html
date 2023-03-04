@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- title -->
+    <title>Metrochanger</title>
+
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+    <!-- favicon -->
+
+    
+    <!-- styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+<body class="py-3">
+
+
+<div class="site-container">  <!-- site-container -->
+    <div class="message">
+        <div class="container">
+            <div class="col-12 gap-2 gap-md-3 d-flex flex-column align-items-start flex-md-row align-items-md-center justify-content-center bg-warning rounded-4 p-3 mb-2">
+                <div class="message-title d-block d-md-none">
+                    Внимание!
+                </div>
+                <p class="pb-0 mb-0">Получите 300 рублей за отзыв на сайте</p>
+                <a href="" class="btn rounded-4 text-md-uppercase btn-success text-white fw-semibold py-2 px-3">Подробнее</a>
+                <a href="" class="close">
+                    <svg>
+                        <use xlink:href='img/sprite.svg#close-line'></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+  
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl bg-primary rounded-4 py-3 px-4 d-lg-flex align-items-center justify-content-between ">
+                <div class="col-3">
+                    <a href="index.html" class="logo fw-semibold fs-5 text-black text-decoration-none" href="#">metrochange</a>
+                </div>
+
+                    <button class="burger-btn hamburger d-block d-xl-none collapsed" type="button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="hamburger-box">
+                          <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                      
+                    <div class="col-12 col-lg-9 collapse d-xl-flex flex align-items-center justify-content-between" id="navbarNav">
+                        <ul class="navbar-nav d-flex gap-3">
+                            <li class="nav-item">
+                                <a class="nav-link text-black" aria-current="page" href="faq.html">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-black" href="homepage.html">Главная</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-black" href="cooperation.html">Сотрудничество</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-black " href="#" id="infoSubmenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Информация</a>
+                                <ul class="dropdown-menu shadow-sm" aria-labelledby="infoSubmenu">
+                                    <li><a href="rules.html">Правила</a></li>
+                                    <li><a href="news.html">Новости</a></li>
+                                    <li><a href="#">Отзывы</a></li>
+                                    <li><a href="contact.html">Контакты</a></li>
+                                  </ul>
+                            </li>
+                        </ul>
+                      
+
+                        <div class="nav-btns d-flex align-items-center gap-3">
+                            <a href="" class="btn border border-2 border-black rounded-4 text-black text-uppercase fw-semibold py-2 px-3" data-bs-toggle="modal" data-bs-target="#auth">войти</a>
+                            <a href="" class="btn rounded-4 text-uppercase btn-success text-white fw-semibold py-2 px-3" data-bs-toggle="modal" data-bs-target="#reg">Регистрация</a>
+                        </div>
+                    </div>
+                
+            </nav>
+
+     
+
+        </div>
+    </header>
+
+
+
+
+    <div class="modal auth-modal" tabindex="-1" id="auth">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            
+                <div class="modal-body d-flex flex-column">
+                    <span class="modal-title">Войти</span> 
+                    <input type="email" placeholder="Ваш email" class="custom-input invalid">
+                    <input type="password" placeholder="Ваш пароль" class="custom-input">
+                    <input type="submit" class="btn btn-success w-100 text-uppercase rounded-4 mt-2 mt-md-4 mb-2" value="Войти в аккаунт">
+                    <a href="" class="gray-link">Восстановить пароль</a>
+
+                    <div class="info text-center rounded-4 bg-warning p-4 mt-2">
+                        <span class="info-title d-block mb-2 font-semibold ">
+                            У Вас нет учётной записи?
+                        </span>
+                        <p class="mb-0">
+                            Тогда Вам нужно <a href="">Зарегистрироваться</a> 
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div class="modal auth-modal" tabindex="-1" id="reg">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            
+                <div class="modal-body d-flex flex-column">
+                    <span class="modal-title">Регистрация</span> 
+                    <input type="email" placeholder="Ваш email" class="custom-input">
+                    <input type="password" placeholder="Пароль" class="custom-input">
+                    <input type="password" placeholder="Повторите пароль" class="custom-input">
+                    <input type="submit" class="btn btn-success w-100 text-uppercase rounded-4 mt-2 mt-md-4 mb-2" value="зарегистрироваться">
+
+                    <div class="info text-center rounded-4 bg-warning p-4 mt-2">
+                        <span class="info-title d-block mb-2 font-semibold ">
+                            У Вас уже есть учетная запись?
+                        </span>
+                        <p class="mb-0">
+                            Тогда Вам нужно <a href="">Войти</a> 
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+<div class="page-container container">
+    <div class="main-screen pt-4 d-flex flex-column flex-lg-row">
+        <div class="col-12 col-lg-6 col-xl-8">
+            <div class="left-side row w-100 m-auto">
+
+                <div class="col-12 col-xl-6 ps-0 mb-3 mb-xl-0 pe-0 pe-lg-2">
+
+                    <div class="block rounded-4 bg-primary p-4 d-flex flex-column">
+                        <div class="block-title">
+                            1. Отдаете
+                        </div>
+                        <span class="min-price align-self-end">Мин. сумма: 0.006317 BTC</span>
+                        <div class="currency-input mt-2 mb-3 mb-md-4">
+                            <input type="text" placeholder="Введите сумму вывода" >
+                            <div class="currency__select-wrap ">
+                                <select name="" id="">
+                                    <option value="btc" data-name="Bitcoin" data-icon="img/icons/BTC.png">BTC</option>
+                                    <option value="eth" data-name="Etherium" data-icon="img/icons/ETH.png">ETH</option>
+                                    <option value="ltc" data-name="Litecoin" data-icon="img/icons/litecoin.png">LTC</option>
+                                    <option value="xpr" data-name="Ripple" data-icon="img/icons/ripple.png">XPR</option>
+                                    <option value="bch" data-name="Bitcoin Cash" data-icon="img/icons/bitcoin-cash.png">BCH</option>
+                                    <option value="zec" data-name="ZCash" data-icon="img/icons/z-cash.png">ZEC</option>
+                                    <option value="dash" data-name="Dash" data-icon="img/icons/dash.png">DASH</option>
+        
+        
+                                    <option value="eth" data-name="Etherium" data-icon="img/icons/ETH.png">ETH</option>
+                                    <option value="ltc" data-name="Litecoin" data-icon="img/icons/litecoin.png">LTC</option>
+                                    <option value="xpr" data-name="Ripple" data-icon="img/icons/ripple.png">XPR</option>
+                                    <option value="bch" data-name="Bitcoin Cash" data-icon="img/icons/bitcoin-cash.png">BCH</option>
+                                    <option value="zec" data-name="ZCash" data-icon="img/icons/z-cash.png">ZEC</option>
+                                    <option value="dash" data-name="Dash" data-icon="img/icons/dash.png">DASH</option>
+                                    <option value="rub" data-name="RUB" data-icon="img/icons/rub.png">RUB</option>
+                                </select>
+                                <button  class=" currency-select" id="currencySelect1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img class="currency-icon" src="img/icons/BTC.png" alt="">
+                                    <span class="currency-name">BTC</span>
+                                    <svg>
+                                        <use xlink:href='img/sprite.svg#arrow-down-s-line'></use>
+                                    </svg>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="currencySelect1">
+                                    <ul class="filter">
+                                        <li>
+                                            <a href="" class="active">Все</a>
+                                        </li>
+                                        <li>
+                                            <a href="">RUB</a>
+                                        </li>
+                                        <li>
+                                            <a href="">USD</a>
+                                        </li>
+                                        <li>
+                                            <a href="">EUR</a>
+                                        </li>
+                                        <li>
+                                            <a href="">UAH</a>
+                                        </li>
+                                        <li>
+                                            <a href="">COIN</a>
+                                        </li>
+                                    </ul>
+                                    <div class="menu-scroller">
+                                    
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <label>Реквизиты отправителя:</label>
+                        <div class="currency-input mt-2 mb-3 mb-md-4">
+                            <input type="text" placeholder="Кошелек отправителя" >
+                        </div>
+
+                        <label>Реквизиты отправителя:</label>
+                        <div class="currency-number mt-2">
+                            <img src="img/icons/BTC.png" alt="">
+                            0,006385 <span class="opacity-50">BTC</span> (Bitcoin)
+                        </div>
+                    </div>
+            
+                </div>
+
+
+                <div class="col-12 col-xl-6 ps-0 ps-xl-2 pe-0 pe-lg-2">
+
+                    <div class="block rounded-4 bg-primary p-4 d-flex flex-column">
+                        <div class="block-title">
+                            2. Получаете
+                        </div>
+                        <span class="min-price align-self-end">Резерв: 2 430 400 RUB</span>
+                        <div class="currency-input mt-2 mb-3 mb-md-4">
+                            <input type="text" placeholder="" >
+                            <div class="currency__select-wrap ">
+                                <select name="" id="">
+                                    <option value="btc" data-name="Bitcoin" data-icon="img/icons/BTC.png">BTC</option>
+                                    <option value="eth" data-name="Etherium" data-icon="img/icons/ETH.png">ETH</option>
+                                    <option value="ltc" data-name="Litecoin" data-icon="img/icons/litecoin.png">LTC</option>
+                                    <option value="xpr" data-name="Ripple" data-icon="img/icons/ripple.png">XPR</option>
+                                    <option value="bch" data-name="Bitcoin Cash" data-icon="img/icons/bitcoin-cash.png">BCH</option>
+                                    <option value="zec" data-name="ZCash" data-icon="img/icons/z-cash.png">ZEC</option>
+                                    <option value="dash" data-name="Dash" data-icon="img/icons/dash.png">DASH</option>
+        
+        
+                                    <option value="eth" data-name="Etherium" data-icon="img/icons/ETH.png">ETH</option>
+                                    <option value="ltc" data-name="Litecoin" data-icon="img/icons/litecoin.png">LTC</option>
+                                    <option value="xpr" data-name="Ripple" data-icon="img/icons/ripple.png">XPR</option>
+                                    <option value="bch" data-name="Bitcoin Cash" data-icon="img/icons/bitcoin-cash.png">BCH</option>
+                                    <option value="zec" data-name="ZCash" data-icon="img/icons/z-cash.png">ZEC</option>
+                                    <option value="dash" data-name="Dash" data-icon="img/icons/dash.png">DASH</option>
+                                    <option value="rub" data-name="RUB" data-icon="img/icons/rub.png">RUB</option>
+                                </select>
+                                <button  class=" currency-select" id="currencySelect2" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img class="currency-icon" src="img/icons/BTC.png" alt="">
+                                    <span class="currency-name">BTC</span>
+                                    <svg>
+                                        <use xlink:href='img/sprite.svg#arrow-down-s-line'></use>
+                                    </svg>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="currencySelect2">
+                                    <ul class="filter">
+                                        <li>
+                                            <a href="" class="active">Все</a>
+                                        </li>
+                                        <li>
+                                            <a href="">RUB</a>
+                                        </li>
+                                        <li>
+                                            <a href="">USD</a>
+                                        </li>
+                                        <li>
+                                            <a href="">EUR</a>
+                                        </li>
+                                        <li>
+                                            <a href="">UAH</a>
+                                        </li>
+                                        <li>
+                                            <a href="">COIN</a>
+                                        </li>
+                                    </ul>
+                                    <div class="menu-scroller">
+                                    
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <label>Реквизиты получателя:</label>
+                        <div class="currency-input mt-2 mb-3 mb-md-4">
+                            <input type="text" placeholder="Номер карты" >
+                        </div>
+
+                        <label>Вы получите</label>
+                        <div class="currency-number mt-2">
+                            <img src="img/icons/alfa.png" alt="">
+                            2000  <span class="opacity-50">RUB</span> (Альфа-Банк)
+                        </div>
+                    </div>
+
+                 </div>
+
+                 <div class="col-12 ps-0 mt-3 mt-xl-4 pe-0 pe-lg-2 mb-3 mb-lg-0">
+                    <div class="attention p-4 bg-warning rounded-4">
+                        <span class="attention-title">Обращаем внимание!</span>
+                        <p>
+                            Переводы осуществляются в валюте EUR на карты Visa/MasterCard зарубежных банков:Европа, СНГ, Страны Персидского залива, Канада, Япония, Новая Зеландия, Австралия.
+                            <br><br>
+                            Перед созданием заявки ознакомьтесь с полным <a href="">регламентом</a>  переводов на карты в валюте EUR!
+                        </p>
+                    </div>
+                 </div>
+
+            </div>
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4  ps-xl-2">
+            <form class="right-side rounded-4 bg-warning p-4 h-100 d-flex flex-column">
+                <span class="block-title mb-4">
+                    3. Выставление счета
+                </span>
+                
+
+                <div class="currency-number currency-number--md">
+                    <svg>
+                        <use xlink:href='img/sprite.svg#shield'></use>
+                    </svg>
+                    <span>Курс: <b>1 BTC = 1 772 380,16 RUB</b></span>
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="18" cy="18" r="18" fill="#8AC988"/>
+                        <path d="M35.1332 23.5186C34.1143 26.6818 32.2396 29.5013 29.7167 31.6645C27.1939 33.8277 24.1214 35.2503 20.8397 35.7746C17.558 36.2989 14.1952 35.9044 11.124 34.6349C8.05269 33.3654 5.39283 31.2704 3.43909 28.5821C1.48535 25.8937 0.313995 22.7169 0.0548211 19.4038C-0.204353 16.0906 0.458767 12.7703 1.97071 9.81087C3.48265 6.85141 5.78439 4.3683 8.6209 2.63665C11.4574 0.905008 14.7179 -0.00756402 18.0412 4.72076e-05L18 18L35.1332 23.5186Z" fill="black" fill-opacity="0.1"/>
+                        <path d="M11.9928 22V20.6705L15.0993 17.794C15.3635 17.5384 15.5851 17.3082 15.7641 17.1037C15.9459 16.8991 16.0837 16.6989 16.1774 16.5028C16.2712 16.304 16.318 16.0895 16.318 15.8594C16.318 15.6037 16.2598 15.3835 16.1433 15.1989C16.0268 15.0114 15.8678 14.8679 15.6661 14.7685C15.4643 14.6662 15.2357 14.6151 14.98 14.6151C14.7129 14.6151 14.48 14.669 14.2811 14.777C14.0822 14.8849 13.9288 15.0398 13.8209 15.2415C13.7129 15.4432 13.6589 15.6832 13.6589 15.9616H11.9075C11.9075 15.3906 12.0368 14.8949 12.2953 14.4744C12.5538 14.054 12.916 13.7287 13.382 13.4986C13.8479 13.2685 14.3848 13.1534 14.9928 13.1534C15.6178 13.1534 16.1618 13.2642 16.6249 13.4858C17.0908 13.7045 17.453 14.0085 17.7115 14.3977C17.97 14.7869 18.0993 15.233 18.0993 15.7358C18.0993 16.0653 18.0339 16.3906 17.9033 16.7116C17.7754 17.0327 17.5467 17.3892 17.2172 17.7812C16.8876 18.1705 16.4232 18.6378 15.8237 19.1832L14.5496 20.4318V20.4915H18.2143V22H11.9928ZM23.3482 13.2727V22H21.5031V15.0241H21.4519L19.4533 16.277V14.6406L21.6138 13.2727H23.3482Z" fill="white"/>
+                    </svg>
+                </div>
+
+                <div class="currency-input mt-3 mt-lg-4">
+                    <input type="text" placeholder="Ваш email">
+                </div>
+
+                <div class="form-check mt-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Вы соглашаетесь с <a href="">правилами сервиса</a> 
+                    </label>
+                </div>
+
+                <div class="form-check mt-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                    <label class="form-check-label" for="flexCheckDefault2">
+                        Запомнить введённые данные
+                    </label>
+                </div>
+
+                <div class="recaptcha mt-3 mt-lg-5">
+                    <img src="img/captcha.png" alt="" class="recaptcha-placeholder">
+                </div>
+
+                <input type="submit" value="совершить обмен" class="btn btn-success text-uppercase rounded-4 mt-3 mt-lg-5">
+
+
+            </form>
+        </div>
+    </div>  
+
+    <div class="news row w-100 m-auto mt-3 mt-xl-4">
+        <div class="col-12 col-lg-6 ps-0 pe-0 pe-lg-2">
+            <div class="carousel-news__wrapper rounded-4 p-4 bg-primary h-100">
+                <div class="carousel-news__header d-flex align-items-center justify-content-between">
+                    <span class="title">
+                        Новости
+                    </span>
+
+                    <div class="nav d-flex align-items-center gap-2">
+                        <button class="carousel-control-prev position-static" type="button" data-bs-target="#carouselNews" data-bs-slide="prev">
+                            <svg>
+                                <use xlink:href='img/sprite.svg#arrow-left-s-line'></use>
+                            </svg>
+                          </button>
+                          <button class="carousel-control-next position-static" type="button" data-bs-target="#carouselNews" data-bs-slide="next">
+                            <svg>
+                                <use xlink:href='img/sprite.svg#arrow-right-s-line'></use>
+                            </svg>
+                          </button>
+                    </div>
+                </div>
+                <div id="carouselNews" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <p>Рекордные продажи NFT и биткоин по $40 тыс. События недели которые</p>
+                        <div class="carousel-item__footer d-flex justify-content-between">
+                            <span>06 фев 2022, 11:00</span>
+                            <span>РБК</span>
+                        </div>
+                      </div>
+
+                      <div class="carousel-item">
+                        <p>Рекордные продажи NFT и биткоин по $40 тыс. События недели которые 2</p>
+                        <div class="carousel-item__footer d-flex justify-content-between">
+                            <span>06 фев 2022, 11:00</span>
+                            <span>РБК</span>
+                        </div>
+                      </div>
+
+                      <div class="carousel-item">
+                        <p>Рекордные продажи NFT и биткоин по $40 тыс. События недели которые 3</p>
+                        <div class="carousel-item__footer d-flex justify-content-between">
+                            <span>06 фев 2022, 11:00</span>
+                            <span>РБК</span>
+                        </div>
+                      </div>
+                     
+                    </div>
+                  
+                  </div>
+            </div>
+            
+        </div>
+
+
+        <div class="col-12 col-lg-6 pe-0 ps-0 ps-lg-2 mt-3 mt-lg-0">
+            <div class="contact__card p-4 bg-primary rounded-4">
+                <span class="contact__card-title">
+                    Наш телеграм
+                </span>
+                <p>
+                    Мы имеем только один канал для связи. Остерегайтесь мошенников
+                </p>
+                <a href="">metrochange_help</a>
+
+                <svg class="contact__card-icon">
+                    <use xlink:href="img/sprite.svg#telegram"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="faq-section">
+        <div class="faq-section__inner w-100">
+            <h2 class="page-title">
+                Остались вопросы?
+            </h2>
+
+            <div class="questions-wrapper row row-cols-1 row-cols-md-2 gap-3 gap-md-0">
+                <div class="questions__col col">
+                    <div class="questions__group">
+                        <div class="questions__title bg-warning px-4 py-4 p-md-4">
+                            О сервисе
+                        </div>
+
+                        <div class="accordion accordion-flush" id="accordion1">
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-heading5">
+                                <button class="accordion-button p-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+                                    Как совершить обмен на вашем сервисе?
+                                </button>
+                                </h2>
+                                <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-heading1" data-bs-parent="#accordion1">
+                                <div class="accordion-body p-4 pt-0">Имеется спорная точка зрения, гласящая примерно следующее: тщательные исследования конкурентов указаны как претенденты на роль ключевых факторов. Внезапно, представители современных социальных резервов освещают чрезвычайно интересные особенности картины в целом,</div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-heading2">
+                                <button class="accordion-button p-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+                                   Я оплатил заявку, но деньги не пришли. Почему?
+                                </button>
+                                </h2>
+                                <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-heading2" data-bs-parent="#accordion1">
+                                <div class="accordion-body p-4 pt-0">Имеется спорная точка зрения, гласящая примерно следующее: тщательные исследования конкурентов указаны как претенденты на роль ключевых факторов. Внезапно, представители современных социальных резервов освещают чрезвычайно интересные особенности картины в целом,</div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-heading3">
+                                <button class="accordion-button p-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+                                    Что мне делать, если я хочу отменить заявку после её оплаты?
+                                </button>
+                                </h2>
+                                <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3" data-bs-parent="#accordion1">
+                                <div class="accordion-body p-4 pt-0">Имеется спорная точка зрения, гласящая примерно следующее: тщательные исследования конкурентов указаны как претенденты на роль ключевых факторов. Внезапно, представители современных социальных резервов освещают чрезвычайно интересные особенности картины в целом,</div>
+                                </div>
+                            </div>
+
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-heading4">
+                                <button class="accordion-button p-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+                                    Режим работы сервиса?
+                                </button>
+                                </h2>
+                                <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4" data-bs-parent="#accordion1">
+                                <div class="accordion-body p-4 pt-0">Имеется спорная точка зрения, гласящая примерно следующее: тщательные исследования конкурентов указаны как претенденты на роль ключевых факторов. Внезапно, представители современных социальных резервов освещают чрезвычайно интересные особенности картины в целом,</div>
+                                </div>
+                            </div>
+
+                        
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+                <div class="questions__col col">
+                    <div class="questions__group">
+                        <div class="questions__title bg-warning px-4 py-4 p-md-4">
+                            О заявке
+                        </div>
+
+                        <div class="accordion accordion-flush" id="accordion2">
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-heading5">
+                                <button class="accordion-button p-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+                                    Как узнать статус выполнения моей заявки?
+                                </button>
+                                </h2>
+                                <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5" data-bs-parent="#accordion2">
+                                <div class="accordion-body p-4 pt-0">Имеется спорная точка зрения, гласящая примерно следующее: тщательные исследования конкурентов указаны как претенденты на роль ключевых факторов. Внезапно, представители современных социальных резервов освещают чрезвычайно интересные особенности картины в целом,</div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-heading6">
+                                <button class="accordion-button p-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse6">
+                                    Возможно ли обменять электронную валюту на наличные (и наоборот) через личную встречу?
+                                </button>
+                                </h2>
+                                <div id="flush-collapse6" class="accordion-collapse collapse" aria-labelledby="flush-heading6" data-bs-parent="#accordion2">
+                                <div class="accordion-body p-4 pt-0">Имеется спорная точка зрения, гласящая примерно следующее: тщательные исследования конкурентов указаны как претенденты на роль ключевых факторов. Внезапно, представители современных социальных резервов освещают чрезвычайно интересные особенности картины в целом,</div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-heading7">
+                                <button class="accordion-button p-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse7" aria-expanded="false" aria-controls="flush-collapse7">
+                                    Почему моя заявка будет заморожена?
+                                </button>
+                                </h2>
+                                <div id="flush-collapse7" class="accordion-collapse collapse" aria-labelledby="flush-heading7" data-bs-parent="#accordion2">
+                                <div class="accordion-body p-4 pt-0">Имеется спорная точка зрения, гласящая примерно следующее: тщательные исследования конкурентов указаны как претенденты на роль ключевых факторов. Внезапно, представители современных социальных резервов освещают чрезвычайно интересные особенности картины в целом,</div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-heading8">
+                                <button class="accordion-button p-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse8" aria-expanded="false" aria-controls="flush-collapse8">
+                                    Сколько времени обрабатывается заявка?
+                                </button>
+                                </h2>
+                                <div id="flush-collapse8" class="accordion-collapse collapse" aria-labelledby="flush-heading8" data-bs-parent="#accordion2">
+                                <div class="accordion-body p-4 pt-0">Имеется спорная точка зрения, гласящая примерно следующее: тщательные исследования конкурентов указаны как претенденты на роль ключевых факторов. Внезапно, представители современных социальных резервов освещают чрезвычайно интересные особенности картины в целом,</div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-heading9">
+                                <button class="accordion-button p-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse9" aria-expanded="false" aria-controls="flush-collapse9">
+                                   Сколько времени обрабатывается заявка?
+                                </button>
+                                </h2>
+                                <div id="flush-collapse9" class="accordion-collapse collapse" aria-labelledby="flush-heading9" data-bs-parent="#accordion2">
+                                <div class="accordion-body p-4 pt-0">Имеется спорная точка зрения, гласящая примерно следующее: тщательные исследования конкурентов указаны как претенденты на роль ключевых факторов. Внезапно, представители современных социальных резервов освещают чрезвычайно интересные особенности картины в целом,</div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-heading0">
+                                <button class="accordion-button p-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse0" aria-expanded="false" aria-controls="flush-collapse0">
+                                  Что делать, если я потерял доступ к почте?
+                                </button>
+                                </h2>
+                                <div id="flush-collapse0" class="accordion-collapse collapse" aria-labelledby="flush-heading0" data-bs-parent="#accordion2">
+                                <div class="accordion-body p-4 pt-0">Имеется спорная точка зрения, гласящая примерно следующее: тщательные исследования конкурентов указаны как претенденты на роль ключевых факторов. Внезапно, представители современных социальных резервов освещают чрезвычайно интересные особенности картины в целом,</div>
+                                </div>
+                            </div>
+
+                        
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner bg-primary gap-3 flex-column flex-md-row row justify-content-between rounded-4 py-3 py-lg-5 px-3 px-lg-4 w-100 mt-5 m-auto">
+                <div class="col">
+                    <a href="" class="footer-logo fw-semibold fs-5 text-black text-decoration-none">
+                        metrochange
+                    </a>
+                    <span class="footer-copyright d-block">Все права защищены © 2023</span>
+                </div>
+                <div class="partners-col col d-md-flex flex-column align-items-md-end">
+                    <span class="partners d-block">
+                        Партнеры:
+                    </span>
+                    <img class="mt-2 mt-md-3" src="img/partners.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div> <!--  /site-container -->
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="js/libs.js"></script>
+<script src="js/main.min.js"></script>
+
+
+
+</body>
+
+</html>

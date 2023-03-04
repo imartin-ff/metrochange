@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- title -->
+    <title>Metrochanger</title>
+
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+    <!-- favicon -->
+
+    
+    <!-- styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+<body class="py-3">
+
+
+<div class="site-container">  <!-- site-container -->
+    <div class="message">
+        <div class="container">
+            <div class="col-12 gap-2 gap-md-3 d-flex flex-column align-items-start flex-md-row align-items-md-center justify-content-center bg-warning rounded-4 p-3 mb-2">
+                <div class="message-title d-block d-md-none">
+                    Внимание!
+                </div>
+                <p class="pb-0 mb-0">Получите 300 рублей за отзыв на сайте</p>
+                <a href="" class="btn rounded-4 text-md-uppercase btn-success text-white fw-semibold py-2 px-3">Подробнее</a>
+                <a href="" class="close">
+                    <svg>
+                        <use xlink:href='img/sprite.svg#close-line'></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+  
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl bg-primary rounded-4 py-3 px-4 d-lg-flex align-items-center justify-content-between ">
+                <div class="col-3">
+                    <a href="index.html" class="logo fw-semibold fs-5 text-black text-decoration-none" href="#">metrochange</a>
+                </div>
+
+                    <button class="burger-btn hamburger d-block d-xl-none collapsed" type="button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="hamburger-box">
+                          <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                      
+                    <div class="col-12 col-lg-9 collapse d-xl-flex flex align-items-center justify-content-between" id="navbarNav">
+                        <ul class="navbar-nav d-flex gap-3">
+                            <li class="nav-item">
+                                <a class="nav-link text-black" aria-current="page" href="faq.html">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-black" href="homepage.html">Главная</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-black" href="cooperation.html">Сотрудничество</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-black " href="#" id="infoSubmenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Информация</a>
+                                <ul class="dropdown-menu shadow-sm" aria-labelledby="infoSubmenu">
+                                    <li><a href="rules.html">Правила</a></li>
+                                    <li><a href="news.html">Новости</a></li>
+                                    <li><a href="#">Отзывы</a></li>
+                                    <li><a href="contact.html">Контакты</a></li>
+                                  </ul>
+                            </li>
+                        </ul>
+                      
+
+                        <div class="nav-btns d-flex align-items-center gap-3">
+                            <a href="" class="btn border border-2 border-black rounded-4 text-black text-uppercase fw-semibold py-2 px-3" data-bs-toggle="modal" data-bs-target="#auth">войти</a>
+                            <a href="" class="btn rounded-4 text-uppercase btn-success text-white fw-semibold py-2 px-3" data-bs-toggle="modal" data-bs-target="#reg">Регистрация</a>
+                        </div>
+                    </div>
+                
+            </nav>
+
+     
+
+        </div>
+    </header>
+
+
+
+
+    <div class="modal auth-modal" tabindex="-1" id="auth">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            
+                <div class="modal-body d-flex flex-column">
+                    <span class="modal-title">Войти</span> 
+                    <input type="email" placeholder="Ваш email" class="custom-input invalid">
+                    <input type="password" placeholder="Ваш пароль" class="custom-input">
+                    <input type="submit" class="btn btn-success w-100 text-uppercase rounded-4 mt-2 mt-md-4 mb-2" value="Войти в аккаунт">
+                    <a href="" class="gray-link">Восстановить пароль</a>
+
+                    <div class="info text-center rounded-4 bg-warning p-4 mt-2">
+                        <span class="info-title d-block mb-2 font-semibold ">
+                            У Вас нет учётной записи?
+                        </span>
+                        <p class="mb-0">
+                            Тогда Вам нужно <a href="">Зарегистрироваться</a> 
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div class="modal auth-modal" tabindex="-1" id="reg">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            
+                <div class="modal-body d-flex flex-column">
+                    <span class="modal-title">Регистрация</span> 
+                    <input type="email" placeholder="Ваш email" class="custom-input">
+                    <input type="password" placeholder="Пароль" class="custom-input">
+                    <input type="password" placeholder="Повторите пароль" class="custom-input">
+                    <input type="submit" class="btn btn-success w-100 text-uppercase rounded-4 mt-2 mt-md-4 mb-2" value="зарегистрироваться">
+
+                    <div class="info text-center rounded-4 bg-warning p-4 mt-2">
+                        <span class="info-title d-block mb-2 font-semibold ">
+                            У Вас уже есть учетная запись?
+                        </span>
+                        <p class="mb-0">
+                            Тогда Вам нужно <a href="">Войти</a> 
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+<div class="page-container">
+    <div class="container">
+        <div class="col-12">
+            <div class="news-wrapper p-3 p-md-5 bg-primary rounded-4 mt-4">
+                <div class="news-img mb-4 mb-md-5">
+                    <img class="w-100 rounded-4" src="img/news-item.png" alt="">
+                </div>
+                <h1>H1 Наш сайт переехал на международный домен</h1>
+                <div class="news-details d-flex align-items-lg-center gap-4 gap-lg-5 mb-lg-5 mb-4  flex-column flex-lg-row mt-4 mt-lg-0">
+                    <div>
+                        1 декабря 2022
+                    </div>
+                    <div>
+                        Администрация metrochange
+                    </div>
+
+                    <div class="ms-lg-auto">
+                        <div class="d-flex align-items-center justify-content-lg-end gap-4">
+                            Поделиться
+                            <div class="socials d-flex align-items-center gap-3 pl-4">
+                                <a href="">
+                                    <img src="img/social/icon_vk.svg" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="img/social/icon_instagram.svg" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="img/social/icon_facebook.svg" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="img/social/icon_ok.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    Наше дело не так однозначно, как может показаться: понимание сути ресурсосберегающих технологий, в своём классическом представлении, допускает внедрение соответствующих условий активизации. Сложно сказать, почему реплицированные с зарубежных источников, современные исследования будут своевременно верифицированы.
+                        <br><br>
+                    В целом, конечно, начало повседневной работы по формированию позиции требует анализа существующих финансовых и административных условий! Противоположная точка зрения подразумевает, что сторонники тоталитаризма в науке представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть указаны как претенденты на роль ключевых факторов. Для современного мира консультация с широким активом однозначно фиксирует необходимость форм воздействия. Не следует, однако, забывать, что выбранный нами инновационный путь не оставляет шанса для экономической целесообразности принимаемых решений. Современные технологии достигли такого уровня, что перспективное планирование однозначно определяет каждого участника как способного принимать собственные решения касаемо своевременного выполнения сверхзадачи. Вот вам яркий пример современных тенденций — постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании соответствующих условий активизации.
+                </p>
+                <div class="d-flex gap-5 align-items-center my-lg-5 my-3">
+                    <img src="img/news-item2.png" alt="" class="d-none d-lg-block">
+                    <div>
+                        <h2>H2 Наш сайт переехал на международный домен</h2>
+                        <p>
+                            Наше дело не так однозначно, как может показаться: понимание сути ресурсосберегающих технологий, в своём классическом представлении, допускает внедрение соответствующих условий активизации. Сложно сказать, почему реплицированные с зарубежных источников, современные исследования будут своевременно верифицированы.
+                            <br><br>
+                            В целом, конечно, начало повседневной работы по формированию позиции требует анализа существующих финансовых и административных условий! Противоположная точка зрения подразумевает, что сторонники тоталитаризма в науке представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть указаны как претенденты на роль ключевых факторов. 
+                            <br><br>
+                            Для современного мира консультация с широким активом однозначно фиксирует необходимость форм воздействия. Не следует, однако, забывать, что выбранный нами инновационный путь не оставляет шанса для экономической целесообразности принимаемых решений. 
+                        </p>
+                    </div>
+                   
+                </div>
+
+                <h2>H2 Наш сайт переехал на международный домен</h2>
+                <ul>
+                    <li>Наше дело не так однозначно, как может показаться: понимание сути ресурсосберегающих технологий, в своём классическом представлении, допускает внедрение соответствующих условий активизации. Сложно сказать, почему реплицированные с зарубежных источников, современные исследования будут своевременно верифицированы.</li>
+                    <li>
+                        В целом, конечно, начало повседневной работы по формированию позиции требует анализа существующих финансовых и административных условий! Противоположная точка зрения подразумевает, что сторонники тоталитаризма в науке представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть указаны как претенденты на роль ключевых факторов. 
+                    </li>
+                    <li>Для современного мира консультация с широким активом однозначно фиксирует необходимость форм воздействия. Не следует, однако, забывать, что выбранный нами инновационный путь не оставляет шанса для экономической целесообразности принимаемых решений. </li>
+                    <li>Cовременные технологии достигли такого уровня, что перспективное планирование однозначно определяет каждого участника как способного принимать собственные решения касаемо своевременного выполнения сверхзадачи. Вот вам яркий пример современных тенденций — постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании соответствующих условий активизации.</li>
+                </ul>
+
+                <h2 class="mt-5">H2 Наш сайт переехал на международный домен</h2>
+                <ol>
+                    <li>Наше дело не так однозначно, как может показаться: понимание сути ресурсосберегающих технологий, в своём классическом представлении, допускает внедрение соответствующих условий активизации. Сложно сказать, почему реплицированные с зарубежных источников, современные исследования будут своевременно верифицированы.</li>
+                    <li>
+                        В целом, конечно, начало повседневной работы по формированию позиции требует анализа существующих финансовых и административных условий! Противоположная точка зрения подразумевает, что сторонники тоталитаризма в науке представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть указаны как претенденты на роль ключевых факторов. 
+                    </li>
+                    <li>Для современного мира консультация с широким активом однозначно фиксирует необходимость форм воздействия. Не следует, однако, забывать, что выбранный нами инновационный путь не оставляет шанса для экономической целесообразности принимаемых решений. </li>
+                    <li>Cовременные технологии достигли такого уровня, что перспективное планирование однозначно определяет каждого участника как способного принимать собственные решения касаемо своевременного выполнения сверхзадачи. Вот вам яркий пример современных тенденций — постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании соответствующих условий активизации.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+   
+</div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner bg-primary gap-3 flex-column flex-md-row row justify-content-between rounded-4 py-3 py-lg-5 px-3 px-lg-4 w-100 mt-5 m-auto">
+                <div class="col">
+                    <a href="" class="footer-logo fw-semibold fs-5 text-black text-decoration-none">
+                        metrochange
+                    </a>
+                    <span class="footer-copyright d-block">Все права защищены © 2023</span>
+                </div>
+                <div class="partners-col col d-md-flex flex-column align-items-md-end">
+                    <span class="partners d-block">
+                        Партнеры:
+                    </span>
+                    <img class="mt-2 mt-md-3" src="img/partners.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div> <!--  /site-container -->
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="js/libs.js"></script>
+<script src="js/main.min.js"></script>
+
+
+
+</body>
+
+</html>

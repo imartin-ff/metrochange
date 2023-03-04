@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- title -->
+    <title>Metrochanger</title>
+
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+    <!-- favicon -->
+
+    
+    <!-- styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+<body class="py-3">
+
+
+<div class="site-container">  <!-- site-container -->
+    <div class="message">
+        <div class="container">
+            <div class="col-12 gap-2 gap-md-3 d-flex flex-column align-items-start flex-md-row align-items-md-center justify-content-center bg-warning rounded-4 p-3 mb-2">
+                <div class="message-title d-block d-md-none">
+                    Внимание!
+                </div>
+                <p class="pb-0 mb-0">Получите 300 рублей за отзыв на сайте</p>
+                <a href="" class="btn rounded-4 text-md-uppercase btn-success text-white fw-semibold py-2 px-3">Подробнее</a>
+                <a href="" class="close">
+                    <svg>
+                        <use xlink:href='img/sprite.svg#close-line'></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+  
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl bg-primary rounded-4 py-3 px-4 d-lg-flex align-items-center justify-content-between ">
+                <div class="col-3">
+                    <a href="index.html" class="logo fw-semibold fs-5 text-black text-decoration-none" href="#">metrochange</a>
+                </div>
+
+                    <button class="burger-btn hamburger d-block d-xl-none collapsed" type="button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="hamburger-box">
+                          <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                      
+                    <div class="col-12 col-lg-9 collapse d-xl-flex flex align-items-center justify-content-between" id="navbarNav">
+                        <ul class="navbar-nav d-flex gap-3">
+                            <li class="nav-item">
+                                <a class="nav-link text-black" aria-current="page" href="faq.html">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-black" href="homepage.html">Главная</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-black" href="cooperation.html">Сотрудничество</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-black " href="#" id="infoSubmenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Информация</a>
+                                <ul class="dropdown-menu shadow-sm" aria-labelledby="infoSubmenu">
+                                    <li><a href="rules.html">Правила</a></li>
+                                    <li><a href="news.html">Новости</a></li>
+                                    <li><a href="#">Отзывы</a></li>
+                                    <li><a href="contact.html">Контакты</a></li>
+                                  </ul>
+                            </li>
+                        </ul>
+                      
+
+                        <div class="nav-btns d-flex align-items-center gap-3">
+                            <a href="" class="btn border border-2 border-black rounded-4 text-black text-uppercase fw-semibold py-2 px-3" data-bs-toggle="modal" data-bs-target="#auth">войти</a>
+                            <a href="" class="btn rounded-4 text-uppercase btn-success text-white fw-semibold py-2 px-3" data-bs-toggle="modal" data-bs-target="#reg">Регистрация</a>
+                        </div>
+                    </div>
+                
+            </nav>
+
+     
+
+        </div>
+    </header>
+
+
+
+
+    <div class="modal auth-modal" tabindex="-1" id="auth">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            
+                <div class="modal-body d-flex flex-column">
+                    <span class="modal-title">Войти</span> 
+                    <input type="email" placeholder="Ваш email" class="custom-input invalid">
+                    <input type="password" placeholder="Ваш пароль" class="custom-input">
+                    <input type="submit" class="btn btn-success w-100 text-uppercase rounded-4 mt-2 mt-md-4 mb-2" value="Войти в аккаунт">
+                    <a href="" class="gray-link">Восстановить пароль</a>
+
+                    <div class="info text-center rounded-4 bg-warning p-4 mt-2">
+                        <span class="info-title d-block mb-2 font-semibold ">
+                            У Вас нет учётной записи?
+                        </span>
+                        <p class="mb-0">
+                            Тогда Вам нужно <a href="">Зарегистрироваться</a> 
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div class="modal auth-modal" tabindex="-1" id="reg">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            
+                <div class="modal-body d-flex flex-column">
+                    <span class="modal-title">Регистрация</span> 
+                    <input type="email" placeholder="Ваш email" class="custom-input">
+                    <input type="password" placeholder="Пароль" class="custom-input">
+                    <input type="password" placeholder="Повторите пароль" class="custom-input">
+                    <input type="submit" class="btn btn-success w-100 text-uppercase rounded-4 mt-2 mt-md-4 mb-2" value="зарегистрироваться">
+
+                    <div class="info text-center rounded-4 bg-warning p-4 mt-2">
+                        <span class="info-title d-block mb-2 font-semibold ">
+                            У Вас уже есть учетная запись?
+                        </span>
+                        <p class="mb-0">
+                            Тогда Вам нужно <a href="">Войти</a> 
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+<div class="page-container">
+    <div class="container pt-4 d-flex flex-wrap">
+
+       <div class="col-12 col-lg-3 cabinet-nav d-none d-md-block">
+        <div class="cabinet-nav__inner bg-primary rounded-4">
+            <span class="cabinet-nav__title">Пользователь</span>
+            <span class="cabinet-nav__email">
+                olivia@untitledui.com
+            </span>
+            <ul>
+                <li>
+                    <a href="cabinet-history.html">
+                        <svg>
+                            <use xlink:href='img/sprite.svg#history-fill'></use>
+                        </svg>
+                        История операций
+                    </a>
+                </li>
+                <li>
+                    <a href="cabinet-ref-history.html">
+                        <svg>
+                            <use xlink:href='img/sprite.svg#exchange-line'></use>
+                        </svg>
+                        История реф. начислений
+
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="active">
+                        <svg>
+                            <use xlink:href='img/sprite.svg#wallet-line'></use>
+                        </svg>
+                        Баланс
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg>
+                            <use xlink:href='img/sprite.svg#window-2-line'></use>
+                        </svg>
+                        Верификация карты
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg>
+                            <use xlink:href='img/sprite.svg#settings-3-line'></use>
+                        </svg>
+                        Настройки
+                    </a>
+                </li>
+            </ul>
+        </div>
+     
+       </div>
+
+       <div class="col-12 col-lg-3 cabinet-nav cabinet-nav__mobile d-md-none">
+        <div class="cabinet-nav__inner bg-warning rounded-4">
+            <span class="cabinet-nav__title">Пользователь</span>
+            <span class="cabinet-nav__email">
+                olivia@untitledui.com
+            </span>
+
+            <a href="" class="settings">
+                <svg>
+                    <use xlink:href="img/sprite.svg#settings-3-line"></use>
+                </svg>
+            </a>
+
+            <div class="cabinet-nav__current d-flex align-items-center gap-2">
+                <svg>
+                    <use xlink:href="img/sprite.svg#history-fill"></use>
+                </svg>
+              
+                История операций
+                
+
+                <svg class="ms-auto arrow">
+                    <use xlink:href="img/sprite.svg#arrow-right-s-line"></use>
+                </svg>
+            </div>
+        </div>
+
+
+        <ul class="px-4 bg-primary rounded-4 mt-3 cabinet-nav__mobile--acordion" >
+            <li>
+                <a href="">
+                    <svg>
+                        <use xlink:href='img/sprite.svg#history-fill'></use>
+                    </svg>
+                    История операций
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#exchange-line"></use>
+                    </svg>
+                    История реф. начислений
+
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#wallet-line"></use>
+                    </svg>
+                    Баланс
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#window-2-line"></use>
+                    </svg>
+                    Верификация карты
+                </a>
+            </li>
+          
+        </ul>
+     
+       </div>
+
+       <div class="col-12 col-lg-9 ps-lg-3 ps-0 mt-3 mt-lg-0">
+        
+           <div class="balance-main px-0 py-lg-4 py-lg-4 px-lg-3 bg-primary rounded-4 row row-cols-1 row-cols-xl-2 mt-0 g-0 g-md-4">
+
+            <div class="col mt-0  px-0 px-lg-3">
+                <div class="balance-main__left mb-lg-5 mb-3 mb-xl-0 p-4 p-lg-0 rounded-4">
+                    <span>Ваша реферальная ссылка:</span>
+                    <div class="link-wrap mt-2 mb-4 d-flex align-items-center">
+                        Ссылка
+                        <a href="">
+                            <svg>
+                                <use xlink:href='img//sprite.svg#link'></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <span>html код для добавления на сайт или форум:</span>
+                    <div class="link-wrap mt-2">
+                        html код
+                        <a href="">
+                            <svg>
+                                <use xlink:href='img//sprite.svg#link'></use>
+                            </svg>
+                        </a>
+                    </div>
+    
+                    <div class="balance-info__cards row row-cols-1 row-cols-md-2 g-3 mt-2">
+                        <div class="col">
+                            <div class="balance-info__card p-2 px-2 py-3 p-xxl-3">
+                                <div class="card-title">Номер заявки:</div>
+                                <div class="card-text">1%</div>
+                            </div>
+                        </div>
+                     
+                        <div class="col">
+                            <div class="balance-info__card px-2 py-3 p-xxl-3">
+                                <div class="card-title">Всего обменов</div>
+                                <div class="card-text">9900 руб.</div>
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div class="balance-info__card p-2 px-2 py-3 p-xxl-3">
+                                <div class="card-title">Все начисления</div>
+                                <div class="card-text">1 000 000 руб.</div>
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div class="balance-info__card px-2 py-3 p-xxl-3">
+                                <div class="card-title">Доступно для вывода</div>
+                                <div class="card-text">9900 руб.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mt-0 px-0 px-lg-3">
+                <div class="balance-main__right p-4 p-lg-0 rounded-4">
+                    <span>Сумма вывода</span>
+                    <div class="currency-input mt-2 mb-3 mb-md-4">
+                        <input type="text" placeholder="Введите сумму вывода" >
+                        <div class="currency__select-wrap ">
+                            <select name="" id="">
+                                <option value="btc" data-name="Bitcoin" data-icon="img/icons/BTC.png">BTC</option>
+                                <option value="eth" data-name="Etherium" data-icon="img/icons/ETH.png">ETH</option>
+                                <option value="ltc" data-name="Litecoin" data-icon="img/icons/litecoin.png">LTC</option>
+                                <option value="xpr" data-name="Ripple" data-icon="img/icons/ripple.png">XPR</option>
+                                <option value="bch" data-name="Bitcoin Cash" data-icon="img/icons/bitcoin-cash.png">BCH</option>
+                                <option value="zec" data-name="ZCash" data-icon="img/icons/z-cash.png">ZEC</option>
+                                <option value="dash" data-name="Dash" data-icon="img/icons/dash.png">DASH</option>
+
+
+                                <option value="eth" data-name="Etherium" data-icon="img/icons/ETH.png">ETH</option>
+                                <option value="ltc" data-name="Litecoin" data-icon="img/icons/litecoin.png">LTC</option>
+                                <option value="xpr" data-name="Ripple" data-icon="img/icons/ripple.png">XPR</option>
+                                <option value="bch" data-name="Bitcoin Cash" data-icon="img/icons/bitcoin-cash.png">BCH</option>
+                                <option value="zec" data-name="ZCash" data-icon="img/icons/z-cash.png">ZEC</option>
+                                <option value="dash" data-name="Dash" data-icon="img/icons/dash.png">DASH</option>
+                                <option value="rub" data-name="RUB" data-icon="img/icons/rub.png">RUB</option>
+                            </select>
+                            <button  class=" currency-select" id="currencySelect1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="currency-icon" src="img/icons/BTC.png" alt="">
+                                <span class="currency-name">BTC</span>
+                                <svg>
+                                    <use xlink:href='img/sprite.svg#arrow-down-s-line'></use>
+                                </svg>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="currencySelect1">
+                                <ul class="filter">
+                                    <li>
+                                        <a href="" class="active">Все</a>
+                                    </li>
+                                    <li>
+                                        <a href="">RUB</a>
+                                    </li>
+                                    <li>
+                                        <a href="">USD</a>
+                                    </li>
+                                    <li>
+                                        <a href="">EUR</a>
+                                    </li>
+                                    <li>
+                                        <a href="">UAH</a>
+                                    </li>
+                                    <li>
+                                        <a href="">COIN</a>
+                                    </li>
+                                </ul>
+                                <div class="menu-scroller">
+                                
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <span>Способ вывода</span>
+                    <div class="currency-input mt-2 mb-3 mb-md-4">
+                        <input type="text" value="Тинькофф">
+                    </div>
+
+                    <span>Карта получателя</span>
+                    <div class="currency-input mt-2 mb-3 mb-md-4">
+                        <input type="text" value="1234 0000 0000 0000">
+                            <svg class="me-2">
+                                <use xlink:href='img/sprite.svg#window-2-line'></use>
+                            </svg>
+                    </div>
+                    <a href="" class="btn btn-success w-100 rounded-4 p-3 p-mb-3">Вывести</a>
+                </div>
+            </div>
+           
+           </div>
+       </div>
+
+   
+
+    </div>
+   
+</div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner bg-primary gap-3 flex-column flex-md-row row justify-content-between rounded-4 py-3 py-lg-5 px-3 px-lg-4 w-100 mt-5 m-auto">
+                <div class="col">
+                    <a href="" class="footer-logo fw-semibold fs-5 text-black text-decoration-none">
+                        metrochange
+                    </a>
+                    <span class="footer-copyright d-block">Все права защищены © 2023</span>
+                </div>
+                <div class="partners-col col d-md-flex flex-column align-items-md-end">
+                    <span class="partners d-block">
+                        Партнеры:
+                    </span>
+                    <img class="mt-2 mt-md-3" src="img/partners.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div> <!--  /site-container -->
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="js/libs.js"></script>
+<script src="js/main.min.js"></script>
+
+
+
+</body>
+
+</html>

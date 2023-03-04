@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- title -->
+    <title>Metrochanger</title>
+
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+    <!-- favicon -->
+
+    
+    <!-- styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+<body class="py-3">
+
+
+<div class="site-container">  <!-- site-container -->
+    <div class="message">
+        <div class="container">
+            <div class="col-12 gap-2 gap-md-3 d-flex flex-column align-items-start flex-md-row align-items-md-center justify-content-center bg-warning rounded-4 p-3 mb-2">
+                <div class="message-title d-block d-md-none">
+                    Внимание!
+                </div>
+                <p class="pb-0 mb-0">Получите 300 рублей за отзыв на сайте</p>
+                <a href="" class="btn rounded-4 text-md-uppercase btn-success text-white fw-semibold py-2 px-3">Подробнее</a>
+                <a href="" class="close">
+                    <svg>
+                        <use xlink:href='img/sprite.svg#close-line'></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+  
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl bg-primary rounded-4 py-3 px-4 d-lg-flex align-items-center justify-content-between ">
+                <div class="col-3">
+                    <a href="index.html" class="logo fw-semibold fs-5 text-black text-decoration-none" href="#">metrochange</a>
+                </div>
+
+                    <button class="burger-btn hamburger d-block d-xl-none collapsed" type="button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="hamburger-box">
+                          <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                      
+                    <div class="col-12 col-lg-9 collapse d-xl-flex flex align-items-center justify-content-between" id="navbarNav">
+                        <ul class="navbar-nav d-flex gap-3">
+                            <li class="nav-item">
+                                <a class="nav-link text-black" aria-current="page" href="faq.html">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-black" href="homepage.html">Главная</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-black" href="cooperation.html">Сотрудничество</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-black " href="#" id="infoSubmenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Информация</a>
+                                <ul class="dropdown-menu shadow-sm" aria-labelledby="infoSubmenu">
+                                    <li><a href="rules.html">Правила</a></li>
+                                    <li><a href="news.html">Новости</a></li>
+                                    <li><a href="#">Отзывы</a></li>
+                                    <li><a href="contact.html">Контакты</a></li>
+                                  </ul>
+                            </li>
+                        </ul>
+                      
+
+                        <div class="nav-btns d-flex align-items-center gap-3">
+                            <a href="" class="btn border border-2 border-black rounded-4 text-black text-uppercase fw-semibold py-2 px-3" data-bs-toggle="modal" data-bs-target="#auth">войти</a>
+                            <a href="" class="btn rounded-4 text-uppercase btn-success text-white fw-semibold py-2 px-3" data-bs-toggle="modal" data-bs-target="#reg">Регистрация</a>
+                        </div>
+                    </div>
+                
+            </nav>
+
+     
+
+        </div>
+    </header>
+
+
+
+
+    <div class="modal auth-modal" tabindex="-1" id="auth">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            
+                <div class="modal-body d-flex flex-column">
+                    <span class="modal-title">Войти</span> 
+                    <input type="email" placeholder="Ваш email" class="custom-input invalid">
+                    <input type="password" placeholder="Ваш пароль" class="custom-input">
+                    <input type="submit" class="btn btn-success w-100 text-uppercase rounded-4 mt-2 mt-md-4 mb-2" value="Войти в аккаунт">
+                    <a href="" class="gray-link">Восстановить пароль</a>
+
+                    <div class="info text-center rounded-4 bg-warning p-4 mt-2">
+                        <span class="info-title d-block mb-2 font-semibold ">
+                            У Вас нет учётной записи?
+                        </span>
+                        <p class="mb-0">
+                            Тогда Вам нужно <a href="">Зарегистрироваться</a> 
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div class="modal auth-modal" tabindex="-1" id="reg">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            
+                <div class="modal-body d-flex flex-column">
+                    <span class="modal-title">Регистрация</span> 
+                    <input type="email" placeholder="Ваш email" class="custom-input">
+                    <input type="password" placeholder="Пароль" class="custom-input">
+                    <input type="password" placeholder="Повторите пароль" class="custom-input">
+                    <input type="submit" class="btn btn-success w-100 text-uppercase rounded-4 mt-2 mt-md-4 mb-2" value="зарегистрироваться">
+
+                    <div class="info text-center rounded-4 bg-warning p-4 mt-2">
+                        <span class="info-title d-block mb-2 font-semibold ">
+                            У Вас уже есть учетная запись?
+                        </span>
+                        <p class="mb-0">
+                            Тогда Вам нужно <a href="">Войти</a> 
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+<div class="page-container container">
+    <h1 class="page-title">
+        Прием платежей вашего проекта
+    </h1>
+    <div class="cooperation-banner">
+        <div class="cooperation-banner__inner row w-100 m-auto rounded-4 bg-warning px-2  py-4 mt-4 px-lg-4 px-xl-5 align-items-center">
+            <div class="col-12 col-md-8 col-lg-6 banner-content pe-3 ps-xl-0 pe-xl-5">
+                <h1 class="text-uppercase fs-2 pb-lg-2 pe-lg-4">Процессинг интернет проектов в рф и турции</h1>
+                <p class="mb-2 fs-6 pb-lg-2 banner-text">
+                    Мы предлагаем безопасные и надежные технологии для подключение приема платежей Вашего бизнеса
+                </p>
+                <a href="" class="btn btn-success text-uppercase rounded-4 mt-3">Отправить</a>
+            </div>
+            <div class="col-12 col-md-4 col-lg-6 pt-4 pt-lg-0">
+                <img class="w-100 d-block m-auto banner-img" src="img/accepting-payments.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="system col-12 mt-4">
+        <div class="system__inner bg-primary px-4 py-4 px-md-5 py-md-5 rounded-4">
+            <h2 class="system-title text-uppercase mb-4">Система мерчант-аккаунта</h2>
+            <div class="system__cards system__cards-4 row g-2">
+                <div class="col-12 col-lg-6 col-xl-3">
+                    <div class="system__cards-item card p-4">
+                        <svg>
+                            <use xlink:href='img/sprite.svg#system1'></use>
+                        </svg>
+                        <span class="item-title">
+                            Подключение
+                        </span>
+                        <p>
+                            Подробная документация API позволит быстро и просто интегрировать платежное решение на Ваш сайт
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 col-xl-3">
+                    <div class="system__cards-item card p-4">
+                        <svg>
+                            <use xlink:href='img/sprite.svg#system2'></use>
+                        </svg>
+                        <span class="item-title">
+                            Вывод средств
+                        </span>
+                        <p>
+                            Массовые выплаты на банковские карты и электронные кошельки, выплаты в криптовалюте
+                        </p>
+                    </div>
+                </div>
+              
+
+                <div class="col-12 col-lg-6 col-xl-3">
+                    <div class="system__cards-item card p-4">
+                        <svg>
+                            <use xlink:href='img/sprite.svg#system3'></use>
+                        </svg>
+                        <span class="item-title">
+                            Методы приема
+                        </span>
+                        <p>
+                            Банковские карты, электронные деньги и токенизация платежей
+                        </p>
+                    </div>
+                </div>
+             
+
+                <div class="col-12 col-lg-6 col-xl-3">
+                    <div class="system__cards-item card p-4">
+                        <svg>
+                            <use xlink:href='img/sprite.svg#system4'></use>
+                        </svg>
+                        <span class="item-title">
+                            Личный кабинет
+                        </span>
+                        <p>
+                            Возможность отслеживать транзакции, выгружать статистику и выводить средства в любое удобное для Вас время
+                        </p>
+                    </div>
+                </div>
+              
+            </div>
+            <div class="system__cards system__cards-2 row g-2 mt-3 mt-md-4">
+                <div class="col-12 col-lg-6">
+                    <div class="bg-warning rounded-4 p-4 d-flex flex-column h-100">
+                        <span>География платежей</span>
+                        <p>
+                            Принемаем платежи и осуществляем выплаты в различных валютах RUB, TRY, EUR и тд.
+                        </p>
+                        <img src="img/wallets.png" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="bg-warning rounded-4 p-4 d-flex flex-column h-100">
+                        <span>Простая интеграция</span>
+                        <p>
+                            Подробная документация API позволит установить мерчант-аккаунт в кратчайшие сроки
+                        </p>
+                        <a href="" class="mt-auto">Ссылка на документацию</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="system col-12 mt-4">
+        <div class="system__inner bg-primary px-4 py-4 px-md-5 py-md-5 rounded-4">
+            <h2 class="system-title text-uppercase mb-4">Индустрии</h2>
+            <div class="system__cards system__cards-4 row g-2">
+                <div class="col-12 col-lg-6 col-xl-3">
+                    <div class="system__cards-item card px-4 py-5 d-flex flex-column align-items-center justify-content-center">
+                        <svg>
+                            <use xlink:href='img/sprite.svg#system5'></use>
+                        </svg>
+                        <span class="item-title mb-0">
+                            Казино
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 col-xl-3">
+                    <div class="system__cards-item card px-4 py-5 d-flex flex-column align-items-center justify-content-center">
+                        <svg>
+                            <use xlink:href='img/sprite.svg#system6'></use>
+                        </svg>
+                        <span class="item-title mb-0">
+                            Беттинг
+                        </span>
+                    
+                    </div>
+                </div>
+              
+
+                <div class="col-12 col-lg-6 col-xl-3">
+                    <div class="system__cards-item card px-4 py-5 d-flex flex-column align-items-center justify-content-center">
+                        <svg>
+                            <use xlink:href='img/sprite.svg#system7'></use>
+                        </svg>
+                        <span class="item-title mb-0">
+                            Подключение
+                        </span>
+                       
+                    </div>
+                </div>
+             
+
+                <div class="col-12 col-lg-6 col-xl-3">
+                    <div class="system__cards-item card px-4 py-5 d-flex flex-column align-items-center justify-content-center">
+                        <svg>
+                            <use xlink:href='img/sprite.svg#system8'></use>
+                        </svg>
+                        <span class="item-title mb-0">
+                            Подключение
+                        </span>
+                      
+                    </div>
+                </div>
+              
+            </div>
+       
+
+        </div>
+    </div>
+
+
+    <div class="guide col-12 mt-4">
+
+        <div class="quide__inner bg-primary px-4 py-4 px-md-5 py-md-5 rounded-4">
+            <h2 class="quide-title mb-md-4 mb-2">
+                Как подключить эквайринг?
+            </h2>
+            <p class="quide-subtitle">
+                Обычно получение доступа к API занимает 24 часа
+            </p>
+
+            <div class="row">
+                <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                    <div class="quide__steps d-flex flex-column gap-2  gap-xxl-4">
+                        <div class="quide__steps-item p-4 d-flex flex-row align-items-center gap-3 card">
+                            <div class="step-number">
+                                1
+                            </div>
+                            <div class="step-content">
+                                <h4 class="step-title">Заполните форму</h4>
+                                <p class="step-text">Мы в тот же день проверим сайт и подтвердим подключение</p>
+                            </div>
+                        </div>
+
+                        <div class="quide__steps-item p-4 d-flex flex-row align-items-center gap-3 card">
+                            <div class="step-number">
+                                2
+                            </div>
+                            <div class="step-content">
+                                <h4 class="step-title">Отправьте заявку</h4>
+                                <p class="step-text">Мы в тот же день проверим сайт и подтвердим подключение</p>
+                            </div>
+                        </div>
+
+                        <div class="quide__steps-item p-4 d-flex flex-row align-items-center gap-3 card">
+                            <div class="step-number">
+                                3
+                            </div>
+                            <div class="step-content">
+                                <h4 class="step-title">Получите доступ</h4>
+                                <p class="step-text">Мы в тот же день проверим сайт и подтвердим подключение</p>
+                            </div>
+                        </div>
+
+                        <div class="quide__steps-item p-4 d-flex flex-row align-items-center gap-3 card">
+                            <div class="step-number">
+                                4
+                            </div>
+                            <div class="step-content">
+                                <h4 class="step-title">Проведите интеграцию</h4>
+                                <p class="step-text">Мы в тот же день проверим сайт и подтвердим подключение</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="quide__contact rounded-4 p-md-5 p-3 bg-warning">
+                        <span class="quide__contact-title">
+                            Оставьте заявку
+                        </span>
+                        <p>
+                            Время обработки заявки в среднем занимает 2 часа, но может продлиться до 48 часов.
+                        </p>
+                        <input type="text" class="custom-input w-100" placeholder="Ваш email">
+                        <input type="text" class="custom-input w-100" placeholder="URL вашего сайта">
+                        <input type="text" class="custom-input w-100" placeholder="Планируемый оборот в месяц">
+                        <input type="submit" class="btn btn-success mt-2 w-100 text-uppercase rounded-4" value="Оставить заявку">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner bg-primary gap-3 flex-column flex-md-row row justify-content-between rounded-4 py-3 py-lg-5 px-3 px-lg-4 w-100 mt-5 m-auto">
+                <div class="col">
+                    <a href="" class="footer-logo fw-semibold fs-5 text-black text-decoration-none">
+                        metrochange
+                    </a>
+                    <span class="footer-copyright d-block">Все права защищены © 2023</span>
+                </div>
+                <div class="partners-col col d-md-flex flex-column align-items-md-end">
+                    <span class="partners d-block">
+                        Партнеры:
+                    </span>
+                    <img class="mt-2 mt-md-3" src="img/partners.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div> <!--  /site-container -->
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="js/libs.js"></script>
+<script src="js/main.min.js"></script>
+
+
+
+</body>
+
+</html>
